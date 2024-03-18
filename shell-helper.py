@@ -1,10 +1,8 @@
 #!/home/nox/micromamba/envs/shell-helper/bin/python
 
-import sys
-import re
+import sys, re, subprocess, os
+
 import openai
-import subprocess
-import os
 
 API_KEYFILE = os.path.join(os.path.expanduser("~"), ".config", "shell-helper", "key")
 
